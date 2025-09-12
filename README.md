@@ -1,6 +1,6 @@
 # POP IT! - Интернет-магазин игрушек-антистресс
 
-![POP IT!](https://img.icons8.com/?size=100&id=iwap_Nng8iOt&format=png&color=000000)
+![POP IT!]
 
 Лучшая игрушка-антистресс - бесконечная пупырчатая пленка!
 

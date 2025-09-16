@@ -53,7 +53,9 @@ a {
 .about:hover,
 .sales:hover,
 .contacts:hover,
-.menu_title:hover {
+.menu_title:hover,
+.delivery:hover,
+.wholesale:hover {
     color: #ff5252;
 }
 
@@ -91,7 +93,7 @@ h1 {
     color: white;
     background: linear-gradient(45deg, #76e3e7, #42b9f0);
     text-decoration: none;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
@@ -159,7 +161,7 @@ h1 {
     min-width: 280px;       
     text-align: center;
     padding: 30px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -190,7 +192,7 @@ h1 {
     color: white;
     background: linear-gradient(45deg, #f9b20e, #df9603);
     text-decoration: none;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
@@ -236,10 +238,56 @@ h1 {
     width: 350px;
     height: 350px;
     object-fit: cover;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin-left: 60px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+
+.footer {
+    background-color: #333;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_title {
+    color: rgb(252, 252, 252);
+    font-size: 24px;
+    font-weight: 800;
+    transition: color 0.3s ease;
+    margin: 0px 64px;
+}
+
+/* .footer_right_nav_elements {
+    display: flex;
+
+} */
+
+.footer_about,
+.footer_contacts,
+.footer_delivery,
+.footer_wholesale {
+    color: rgb(252, 252, 252);
+    font-size: 18px;
+    transition: color 0.3s ease;
+    margin: auto 100px;
+}
+
+.footer_title:hover,
+.footer_about:hover,
+.footer_contacts:hover,
+.footer_delivery:hover,
+.footer_wholesale:hover {
+    color: #ff5252;
+}
+
+
+/* .footer_right_nav_elements {
+    margin-right: 32px;
+} */
 
 /* Адаптивность */
 @media (max-width: 1200px) {
@@ -323,5 +371,157 @@ h1 {
     .item__image {
         width: 150px;
         height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 50px;
+    }
+    
+    .main {
+        height: 70vh;
+        margin-left: 0;
+        padding: 0 15px;
+    }
+    
+    .main_text {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .btn_buy {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+    
+    .header_nav_menu {
+        padding: 15px;
+    }
+    
+    .menu_title {
+        font-size: 20px;
+    }
+    
+    .about,
+    .sales,
+    .contacts {
+        font-size: 14px;
+    }
+    
+    .header_right_nav_elements {
+        gap: 15px;
+    }
+    
+    .section_about {
+        padding: 40px 15px;
+    }
+    
+    .about_title {
+        font-size: 28px;
+    }
+    
+    .about_text {
+        font-size: 16px;
+    }
+    
+    .items_title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .item {
+        min-width: 220px;
+        padding: 20px;
+    }
+    
+    .item__image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .item__title {
+        font-size: 16px;
+    }
+    
+    .item__btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    
+    .section_rules_text {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+    
+    .rules {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .rules_title {
+        font-size: 28px;
+    }
+    
+    .rules_text {
+        font-size: 14px;
+    }
+    
+    .rules_image {
+        width: 250px;
+        height: 250px;
+        margin-left: 0;
+    }
+    
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .footer_title {
+        font-size: 20px;
+        margin: 0;
+    }
+    
+    .footer_right_nav_elements {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .footer_about,
+    .footer_contacts,
+    .footer_delivery,
+    .footer_wholesale {
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+/* Для экстремально маленьких (320px и меньше) */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 40px;
+    }
+    
+    .main_text {
+        font-size: 14px;
+    }
+    
+    .btn_buy {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    
+    .item {
+        min-width: 200px;
+    }
+    
+    .rules_image {
+        width: 200px;
+        height: 200px;
     }
 }
